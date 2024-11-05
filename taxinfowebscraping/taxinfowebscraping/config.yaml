@@ -1,0 +1,16 @@
+maintainer: Dhanoop Karunakaran
+webscrape:
+  url_threshold: 100
+  debug: False
+  unlock_get_all_urls: True #This has to be set False all the time as we do not need to run that often. May be once in 6 months
+  exceptions:
+    - 'tax-and-super-professionals'
+    - 'businesses-and-organisations'
+    - 'about-ato'
+    - 'commitments-and-reporting'
+    - 'other-languages'
+chromadb:
+  collection_name: 'tax-pages'
+  host: '127.0.0.1'
+  port: 8000
+  no_doc_similarity_return: 3 
