@@ -48,9 +48,8 @@ class TaxtinfoSpider(scrapy.Spider):
             # Update
             self.chromadb.update(doc['id'], data)
             
-        '''for link in self.link_extractor.extract_links(response):
-            time.sleep(0.25)
-            yield Request(link.url, callback=self.parse)'''
+        for link in self.link_extractor.extract_links(response):
+            yield Request(link.url, callback=self.parse)
         
         
 
