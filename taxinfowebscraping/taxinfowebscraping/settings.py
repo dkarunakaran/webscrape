@@ -127,6 +127,6 @@ USER_AGENT = 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15
 # Randomising Request Delays - https://scrapeops.io/python-scrapy-playbook/scrapy-403-unhandled-forbidden-error/#:~:text=The%20most%20common%20reason%20for,it%20sends%20with%20your%20request
 # When DOWNLOAD_DELAY is non-zero, Scrapy will wait a random interval of between 
 # 0.5 * DOWNLOAD_DELAY and 1.5 * DOWNLOAD_DELAY between each request.
-DOWNLOAD_DELAY = 2  # 2 seconds of delay
+DOWNLOAD_DELAY = 3  # 2 seconds of delay
 
 #-------------------------------------------------------------------------------------------------
