@@ -1,4 +1,4 @@
-# Scrapy settings for catalogue_scraping project
+# Scrapy settings for grocery_scraping project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "catalogue_scraping"
+BOT_NAME = "grocery_scraping"
 
-SPIDER_MODULES = ["catalogue_scraping.spiders"]
-NEWSPIDER_MODULE = "catalogue_scraping.spiders"
+SPIDER_MODULES = ["grocery_scraping.spiders"]
+NEWSPIDER_MODULE = "grocery_scraping.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "catalogue_scraping (+http://www.yourdomain.com)"
+#USER_AGENT = "grocery_scraping (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "catalogue_scraping.middlewares.CatalogueScrapingSpiderMiddleware": 543,
+#    "grocery_scraping.middlewares.GroceryScrapingSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "catalogue_scraping.middlewares.CatalogueScrapingDownloaderMiddleware": 543,
+#    "grocery_scraping.middlewares.GroceryScrapingDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "catalogue_scraping.pipelines.CatalogueScrapingPipeline": 300,
+#    "grocery_scraping.pipelines.GroceryScrapingPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
